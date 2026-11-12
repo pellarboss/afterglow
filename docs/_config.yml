@@ -1,0 +1,31 @@
+# GitHub Pages builds this folder with Jekyll automatically.
+# Settings → Pages → Deploy from a branch → main → /docs
+title: Afterglow
+description: >-
+  Control a Bluetooth Philips Hue light from your Mac menu bar, with Siri and
+  Apple Home. No Hue Bridge needed.
+url: "https://pellarboss.github.io"
+baseurl: "/afterglow"
+repo_url: "https://github.com/pellarboss/afterglow"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

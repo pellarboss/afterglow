@@ -1,0 +1,12 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/img/app_icon.png' | relative_url }}" alt="" width="28" height="28">
+    <span>Afterglow</span>
+  </a>
+  <nav class="site-nav" aria-label="Site">
+    <a href="{{ '/getting-started.html' | relative_url }}"{% if page.url == "/getting-started.html" %} aria-current="page"{% endif %}>Get started</a>
+    <a href="{{ '/features.html' | relative_url }}"{% if page.url == "/features.html" %} aria-current="page"{% endif %}>Docs</a>
+    <a href="{{ site.repo_url }}">GitHub</a>
+  </nav>
+</header>

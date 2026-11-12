@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/pellarboss/afterglow/discussions
+    about: Ask questions and share setups in Discussions.
+  - name: Documentation
+    url: https://pellarboss.github.io/afterglow/
+    about: Setup guide, features and troubleshooting.

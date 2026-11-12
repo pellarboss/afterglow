@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+{% include head.html %}
+</head>
+<body class="docs">
+{% include header.html %}
+<div class="docs-shell">
+  <nav class="docs-nav" aria-label="Documentation">
+    <ul>
+      {% for item in site.data.nav %}
+      <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <main id="main" class="prose">
+    <h1>{{ page.title }}</h1>
+    {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+    {{ content }}
+    <p class="edit"><a href="{{ site.repo_url }}/edit/main/docs/{{ page.path }}">Edit this page on GitHub</a></p>
+  </main>
+</div>
+{% include footer.html %}
+</body>
+</html>

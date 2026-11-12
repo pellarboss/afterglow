@@ -1,0 +1,481 @@
+[
+  {
+    "key": "jazz",
+    "name": "Jazz Bar at Night",
+    "group": "Calm",
+    "interval_s": 45,
+    "every": "45 s",
+    "fade_ms": 8000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Whisky amber",
+        "hex": "#E08A2E",
+        "brightness": 45
+      },
+      {
+        "name": "Candlelight",
+        "hex": "#FF932C",
+        "brightness": 35
+      },
+      {
+        "name": "Burgundy velvet",
+        "hex": "#8E1B3A",
+        "brightness": 30
+      },
+      {
+        "name": "Brass",
+        "hex": "#D4A017",
+        "brightness": 40
+      },
+      {
+        "name": "Ember red",
+        "hex": "#A8240F",
+        "brightness": 25
+      },
+      {
+        "name": "Cognac",
+        "hex": "#9A4E1C",
+        "brightness": 35
+      }
+    ]
+  },
+  {
+    "key": "bangkok",
+    "name": "Bangkok Opium Den",
+    "group": "Calm",
+    "interval_s": 60,
+    "every": "60 s",
+    "fade_ms": 10000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Red lacquer",
+        "hex": "#A3121F",
+        "brightness": 35
+      },
+      {
+        "name": "Lantern orange",
+        "hex": "#E8641B",
+        "brightness": 40
+      },
+      {
+        "name": "Saffron",
+        "hex": "#F4B400",
+        "brightness": 35
+      },
+      {
+        "name": "Rosewood",
+        "hex": "#7A2E2E",
+        "brightness": 25
+      },
+      {
+        "name": "Gold leaf",
+        "hex": "#C9A227",
+        "brightness": 30
+      },
+      {
+        "name": "Teak glow",
+        "hex": "#8B4A1E",
+        "brightness": 30
+      }
+    ]
+  },
+  {
+    "key": "relax",
+    "name": "Relax",
+    "group": "Calm",
+    "interval_s": 90,
+    "every": "90 s",
+    "fade_ms": 15000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Sunset peach",
+        "hex": "#FFB38A",
+        "brightness": 45
+      },
+      {
+        "name": "Terracotta rose",
+        "hex": "#E3866F",
+        "brightness": 40
+      },
+      {
+        "name": "Apricot",
+        "hex": "#F6A96B",
+        "brightness": 40
+      },
+      {
+        "name": "Warm white",
+        "hex": "#FFA957",
+        "brightness": 45
+      },
+      {
+        "name": "Honey",
+        "hex": "#F2A541",
+        "brightness": 40
+      },
+      {
+        "name": "Candlelight",
+        "hex": "#FF932C",
+        "brightness": 35
+      }
+    ]
+  },
+  {
+    "key": "focus",
+    "name": "Focus",
+    "group": "Calm",
+    "interval_s": 300,
+    "every": "5 min",
+    "fade_ms": 30000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Daylight",
+        "hex": "#FFE4CE",
+        "brightness": 100
+      },
+      {
+        "name": "Cool white",
+        "hex": "#FFDBBA",
+        "brightness": 100
+      },
+      {
+        "name": "Neutral white",
+        "hex": "#FFD1A3",
+        "brightness": 95
+      },
+      {
+        "name": "Evening white",
+        "hex": "#FFBB78",
+        "brightness": 80
+      },
+      {
+        "name": "Soft white",
+        "hex": "#FFB46B",
+        "brightness": 80
+      },
+      {
+        "name": "Warm white",
+        "hex": "#FFA957",
+        "brightness": 75
+      }
+    ],
+    "note": "Cool whites by day, warm after sunset"
+  },
+  {
+    "key": "fireplace",
+    "name": "Fireplace",
+    "group": "Calm",
+    "interval_s": 8,
+    "every": "about 8 s",
+    "fade_ms": 3000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Ember",
+        "hex": "#B22A0E",
+        "brightness": 30
+      },
+      {
+        "name": "Flame",
+        "hex": "#E8590C",
+        "brightness": 45
+      },
+      {
+        "name": "Glow",
+        "hex": "#F59E0B",
+        "brightness": 40
+      },
+      {
+        "name": "Deep log",
+        "hex": "#8B1A0A",
+        "brightness": 25
+      },
+      {
+        "name": "Candle",
+        "hex": "#FF890E",
+        "brightness": 35
+      }
+    ],
+    "note": "Flickers"
+  },
+  {
+    "key": "marrakech",
+    "name": "Marrakech Dusk",
+    "group": "Calm",
+    "interval_s": 60,
+    "every": "60 s",
+    "fade_ms": 10000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Terracotta",
+        "hex": "#C2562F",
+        "brightness": 40
+      },
+      {
+        "name": "Saffron spice",
+        "hex": "#E9A23B",
+        "brightness": 40
+      },
+      {
+        "name": "Rose clay",
+        "hex": "#C97064",
+        "brightness": 35
+      },
+      {
+        "name": "Brass lantern",
+        "hex": "#B8862B",
+        "brightness": 35
+      },
+      {
+        "name": "Paprika",
+        "hex": "#9E2B1E",
+        "brightness": 30
+      }
+    ]
+  },
+  {
+    "key": "kyoto",
+    "name": "Kyoto Lanterns",
+    "group": "Calm",
+    "interval_s": 60,
+    "every": "60 s",
+    "fade_ms": 12000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Torii vermilion",
+        "hex": "#E34234",
+        "brightness": 40
+      },
+      {
+        "name": "Paper lantern",
+        "hex": "#FFB347",
+        "brightness": 45
+      },
+      {
+        "name": "Cedar",
+        "hex": "#8B5A2B",
+        "brightness": 30
+      },
+      {
+        "name": "Sake gold",
+        "hex": "#E6C068",
+        "brightness": 40
+      },
+      {
+        "name": "Maple red",
+        "hex": "#C1272D",
+        "brightness": 35
+      }
+    ]
+  },
+  {
+    "key": "tokyo",
+    "name": "Tokyo Neon",
+    "group": "Energetic",
+    "interval_s": 15,
+    "every": "15 s",
+    "fade_ms": 1500,
+    "blue_rich": true,
+    "colours": [
+      {
+        "name": "Shibuya pink",
+        "hex": "#FF2E88",
+        "brightness": 90
+      },
+      {
+        "name": "Electric cyan",
+        "hex": "#00E5FF",
+        "brightness": 85
+      },
+      {
+        "name": "Ultraviolet",
+        "hex": "#7B2CFF",
+        "brightness": 80
+      },
+      {
+        "name": "Acid lime",
+        "hex": "#B6FF00",
+        "brightness": 75
+      },
+      {
+        "name": "Kabukicho red",
+        "hex": "#FF1E3C",
+        "brightness": 85
+      },
+      {
+        "name": "Cobalt",
+        "hex": "#1F4BFF",
+        "brightness": 80
+      }
+    ]
+  },
+  {
+    "key": "havana",
+    "name": "Havana Nights",
+    "group": "Energetic",
+    "interval_s": 15,
+    "every": "15 s",
+    "fade_ms": 1500,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Salsa red",
+        "hex": "#E8112D",
+        "brightness": 85
+      },
+      {
+        "name": "Rum gold",
+        "hex": "#E6A817",
+        "brightness": 85
+      },
+      {
+        "name": "Flamingo pink",
+        "hex": "#FF5E8A",
+        "brightness": 80
+      },
+      {
+        "name": "Cigar ember",
+        "hex": "#D2471C",
+        "brightness": 75
+      },
+      {
+        "name": "Sunset orange",
+        "hex": "#FF7B29",
+        "brightness": 85
+      },
+      {
+        "name": "Papaya",
+        "hex": "#FF9F45",
+        "brightness": 85
+      }
+    ]
+  },
+  {
+    "key": "rio",
+    "name": "Rio Carnival",
+    "group": "Energetic",
+    "interval_s": 12,
+    "every": "12 s",
+    "fade_ms": 1000,
+    "blue_rich": false,
+    "colours": [
+      {
+        "name": "Samba yellow",
+        "hex": "#FFD000",
+        "brightness": 95
+      },
+      {
+        "name": "Carnival red",
+        "hex": "#F2142A",
+        "brightness": 90
+      },
+      {
+        "name": "Tropical orange",
+        "hex": "#FF8C00",
+        "brightness": 95
+      },
+      {
+        "name": "Feather magenta",
+        "hex": "#E6198A",
+        "brightness": 85
+      },
+      {
+        "name": "Parrot green",
+        "hex": "#4CCB2E",
+        "brightness": 80
+      },
+      {
+        "name": "Mango",
+        "hex": "#FFB000",
+        "brightness": 90
+      }
+    ]
+  },
+  {
+    "key": "synthwave",
+    "name": "Synthwave Miami",
+    "group": "Energetic",
+    "interval_s": 20,
+    "every": "20 s",
+    "fade_ms": 2000,
+    "blue_rich": true,
+    "colours": [
+      {
+        "name": "Hot pink",
+        "hex": "#FF3FA4",
+        "brightness": 90
+      },
+      {
+        "name": "Sunset orange",
+        "hex": "#FF7A1A",
+        "brightness": 85
+      },
+      {
+        "name": "Laser violet",
+        "hex": "#9B30FF",
+        "brightness": 80
+      },
+      {
+        "name": "Pool cyan",
+        "hex": "#00D4E6",
+        "brightness": 80
+      },
+      {
+        "name": "Magenta",
+        "hex": "#E0218A",
+        "brightness": 85
+      },
+      {
+        "name": "Palm gold",
+        "hex": "#FFC233",
+        "brightness": 85
+      }
+    ]
+  },
+  {
+    "key": "berlin",
+    "name": "Berlin Warehouse",
+    "group": "Energetic",
+    "interval_s": 8,
+    "every": "8 s",
+    "fade_ms": 500,
+    "blue_rich": true,
+    "colours": [
+      {
+        "name": "Laser red",
+        "hex": "#FF0A1E",
+        "brightness": 100
+      },
+      {
+        "name": "UV purple",
+        "hex": "#6A0DFF",
+        "brightness": 85
+      },
+      {
+        "name": "Flash white",
+        "hex": "#FFF9FD",
+        "brightness": 100
+      },
+      {
+        "name": "Acid green",
+        "hex": "#39FF14",
+        "brightness": 85
+      },
+      {
+        "name": "Cobalt",
+        "hex": "#0040FF",
+        "brightness": 85
+      },
+      {
+        "name": "Siren amber",
+        "hex": "#FFA000",
+        "brightness": 95
+      }
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+---
+layout: home
+title: Afterglow
+---
+{% assign first = site.data.themes[0] %}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wall" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <h1 id="hero-title" class="lit">Your Hue light, without the bridge.</h1>
+    <p class="hero-sub">Afterglow is a free Mac menu bar app that talks to a Philips Hue light over Bluetooth and puts it back in Apple Home, so Siri and the Home app keep working.</p>
+    <p class="actions">
+      <a class="button primary" href="{{ '/getting-started.html' | relative_url }}">Get started</a>
+      <a class="button" href="{{ site.repo_url }}">View source on GitHub</a>
+    </p>
+  </div>
+  <figure class="strip-figure">
+    <div class="strip" aria-hidden="true"><span class="led"></span></div>
+    <figcaption class="now" id="now">
+      <span class="now-swatch" aria-hidden="true"></span>
+      <span><strong id="now-colour">{{ first.colours[0].name }}</strong>, from <span id="now-theme">{{ first.name }}</span>. <span id="now-next">On your light this changes every {{ first.every }}.</span></span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="themes" aria-labelledby="themes-title">
+  <div class="section-head">
+    <h2 id="themes-title">Twelve themes, from fireplace to Tokyo neon</h2>
+    <p>Calm themes are warm, slow and free of blue, so the change is felt more than noticed. Energetic themes are brighter and quicker. Nothing strobes. Pick one to light this page with it.</p>
+  </div>
+  <div class="theme-groups">
+    {% assign groups = "Calm,Energetic" | split: "," %}
+    {% for group in groups %}
+    <div class="theme-group">
+      <h3>{{ group }}</h3>
+      <ul class="theme-list">
+        {% for t in site.data.themes %}{% if t.group == group %}
+        <li>
+          <button class="theme" type="button" data-key="{{ t.key }}" aria-pressed="{% if forloop.first and group == 'Calm' %}true{% else %}false{% endif %}">
+            <span class="theme-name">{{ t.name }}{% if t.blue_rich %} <span class="tag">blue-rich</span>{% endif %}</span>
+            <span class="swatches" aria-hidden="true">{% for c in t.colours %}<span style="--c: {{ c.hex }}"></span>{% endfor %}</span>
+            <span class="theme-meta">{% if t.note %}{{ t.note }}, {% endif %}every {{ t.every }}</span>
+          </button>
+        </li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="features" aria-labelledby="features-title">
+  <div class="section-head">
+    <h2 id="features-title">Everything the bridge did, plus a few things it didn't</h2>
+  </div>
+  <dl class="feature-list">
+    <div>
+      <dt>Menu bar controls</dt>
+      <dd>On and off, brightness, warm to cool white, colour presets and the macOS colour picker, one click from the menu bar.</dd>
+    </div>
+    <div>
+      <dt>Apple Home and Siri</dt>
+      <dd>Scan a QR code once and the light is back in the Home app and Control Centre. “Hey Siri, turn on the desk light” works again.</dd>
+    </div>
+    <div>
+      <dt>Desktop widget</dt>
+      <dd>A macOS widget shows the theme, its palette and whether the light is on. For the colour of the moment, open the floating panel.</dd>
+    </div>
+    <div>
+      <dt>Match Spotify</dt>
+      <dd>When a new song starts, the light fades to the most vivid colour on its album cover. No Spotify login or developer keys.</dd>
+    </div>
+    <div>
+      <dt>On at sunset</dt>
+      <dd>The light comes on dim and warm just before sunset and brightens as it gets dark. Sunset is worked out on your Mac, offline.</dd>
+    </div>
+    <div>
+      <dt>Sleeps with your Mac</dt>
+      <dd>The light turns off when your Mac sleeps and, if you like, back on when it wakes.</dd>
+    </div>
+  </dl>
+</section>
+
+<section class="setup" aria-labelledby="setup-title">
+  <div class="section-head">
+    <h2 id="setup-title">Set it up</h2>
+    <p>You need a Mac with Bluetooth, Python 3.10 or later, the Xcode Command Line Tools and a Hue light with Bluetooth. Your Mac becomes the bridge, so keep it within about 10 m of the light.</p>
+  </div>
+  <ol class="steps">
+    <li>
+      <h3>Build the app</h3>
+<pre><code>git clone {{ site.repo_url }}.git
+cd afterglow
+./build_app.sh
+open "Afterglow.app"</code></pre>
+    </li>
+    <li>
+      <h3>Reset the light</h3>
+      <p>In the Hue app on your iPhone, go to Settings, Lights, your light, then <strong>Reset</strong>. Use Reset, not Delete.</p>
+    </li>
+    <li>
+      <h3>Pair it</h3>
+      <p>Within a couple of minutes, click the bulb in the menu bar and choose <strong>Set Up Light</strong>, <strong>Scan for Lights</strong>, then <strong>Pair</strong>. The light blinks once when it works.</p>
+    </li>
+    <li>
+      <h3>Add it to Apple Home</h3>
+      <p>Choose <strong>Add to Apple Home…</strong> and scan the QR code with the Home app on your iPhone.</p>
+    </li>
+  </ol>
+  <p class="more"><a href="{{ '/getting-started.html' | relative_url }}">Read the full setup guide</a></p>
+</section>

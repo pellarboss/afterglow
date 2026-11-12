@@ -1,0 +1,70 @@
+# XcodeGen spec for the Afterglow macOS widget. build_widget.sh fills in the
+# ${...} values from environment variables and generates the Xcode project.
+name: AfterglowWidget
+options:
+  bundleIdPrefix: ${AFTERGLOW_PREFIX}
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: ${AFTERGLOW_TEAM}
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "Apple Development"
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_HARDENED_RUNTIME: NO
+targets:
+  AfterglowWidget:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Shared
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Afterglow Widget
+        LSUIElement: true
+        AfterglowAppGroup: ${AFTERGLOW_GROUP}
+    entitlements:
+      path: App/AfterglowWidget.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - ${AFTERGLOW_GROUP}
+    settings:
+      base:
+        PRODUCT_NAME: Afterglow Widget
+        PRODUCT_BUNDLE_IDENTIFIER: ${AFTERGLOW_PREFIX}.widget
+    dependencies:
+      - target: AfterglowWidgetExtension
+    scheme: {}
+  AfterglowWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Widget
+      - path: Shared
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: Afterglow
+        AfterglowAppGroup: ${AFTERGLOW_GROUP}
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widget/AfterglowWidgetExtension.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - ${AFTERGLOW_GROUP}
+    settings:
+      base:
+        PRODUCT_NAME: AfterglowWidgetExtension
+        PRODUCT_BUNDLE_IDENTIFIER: ${AFTERGLOW_PREFIX}.widget.extension
+        SKIP_INSTALL: YES
+    dependencies:
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework

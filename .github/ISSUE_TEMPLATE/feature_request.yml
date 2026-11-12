@@ -1,0 +1,15 @@
+name: Feature or theme idea
+description: Suggest a feature, improvement or new theme
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the feature, or for a theme give it a name, 5–6 colours (hex) and how often it should change.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?

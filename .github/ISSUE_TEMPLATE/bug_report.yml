@@ -1,0 +1,49 @@
+name: Bug report
+description: Something isn't working
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please **don't paste** `homekit.state`, `config.json` or your HomeKit setup code.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Click the bulb → Themes → Tokyo Neon
+        2. Put the Mac to sleep
+        3. …
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 26.1
+    validations:
+      required: true
+  - type: input
+    id: light
+    attributes:
+      label: Light model
+      placeholder: e.g. Afterglowstrip Plus (Bluetooth)
+  - type: dropdown
+    id: how
+    attributes:
+      label: How are you running Afterglow?
+      options:
+        - Afterglow.app (built with build_app.sh)
+        - ./start.sh menubar
+        - ./start.sh run (headless bridge)
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Relevant lines from Set Up Light → Open Log (`~/Library/Logs/Afterglow.log`).
+      render: text

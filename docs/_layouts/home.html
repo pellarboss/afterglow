@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+{% include head.html %}
+</head>
+<body class="home">
+{% include header.html %}
+<main id="main">
+{{ content }}
+</main>
+{% include footer.html %}
+<script>window.AFTERGLOW_THEMES = {{ site.data.themes | jsonify }};</script>
+<script src="{{ '/assets/js/glow.js' | relative_url }}" defer></script>
+</body>
+</html>
