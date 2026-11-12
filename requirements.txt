@@ -4,4 +4,4 @@ rumps>=0.4.0
 pypng>=0.20220715
 Pillow>=10.0
 astral>=3.2
-pyobjc-framework-Quartz>=10.0
+pyobjc-framework-Quartz>=13.0
