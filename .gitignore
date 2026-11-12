@@ -41,3 +41,5 @@ docs/Gemfile.lock
 *.log
 .vscode/
 .idea/
+protect-main.sh
+protect.log
